@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Модуль AmoCRM</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/main.css">
+        <link rel="shortcut icon" href="/site-files/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&subset=cyrillic-ext" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <style type="text/css">
+            input {
+                border: none;
+                padding: 10px;
+                width: 350px;
+                height: 40px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                outline: none;
+            }
+            
+            label {
+                display: inline-block;
+                font-size: 14px;
+                padding: 30px 0 0 0;
+            }
+            
+            button {
+                width: 140px;
+                height: 40px;
+                padding: 10px 0 10px 0;
+                margin: 35px 0 20px 0;
+                background-color: #c04331;
+                cursor: pointer;
+                color: white;
+                border: 1px solid #c04331;
+                border-radius: 4px;
+                -webkit-transition: background-color ease-out 0.3s;
+                -moz-transition: background-color ease-out 0.3s;
+                -o-transition: background-color ease-out 0.3s;
+                transition: background-color ease-out 0.3s;
+            }
+            
+            button:hover {
+                background-color: white;
+                color: #c04331;
+            }
+            
+            h2 {
+                margin: 0;
+                padding: 0 0 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid center">
+            <br><br><a href="/"><img src="/site-files/logo.png" width="150px"></a><br><br>
+        </div>
+        
+        
+        <h1>Возможности виджета AmoCRM:</h1>
+        <div class="grid" style="width: 800px; padding: 0 0 20px 0;">
+            1. Отправка вызова из­ карточки клиента чер­ез сервис infobot.pro<br>
+            2. Отправка вызова гр­уппе клиентов, отмече­нных галочками в сущн­остях "контакты" и "компании"<br>
+            3. Автоматическая отп­равка вызова клиенту ­по наступлению срока ­выполнения задачи.­<br>
+            4. Автоматическая отп­равка вызова при пере­ходе "сделки" на след­ующий этап воронки продаж.<br><br><br>
+        </div>
+        
+        <div class="grid center">
+        <h2>Для установки виджета</h2>
+        <h2>заполните форму:</h2>
+        </div>
+        
+        <div class="grid center">
+            <form action="https://callservice.pro/amo/install.php" method="POST">
+                <label>Домен AmoCRM:</label><br>
+                <input required name="domen" id="domen" type="text" placeholder="Домен" autocomplete="off" maxlength="90"></input><br>
+                <label>Логин AmoCRM:</label><br>
+                <input required name="login" id="login" type="text" placeholder="Логин" autocomplete="off" maxlength="90"></input><br>
+                <label>API-ключ AmoCRM:</label><br>
+                <input required name="key" id="key" placeholder="API-ключ" autocomplete="off" maxlength="90"></textarea><br>
+                <label>API ключ Инфобот:</label><br>
+                <input required name="keyibot" id="keyibot" type="text" placeholder="API ключ Инфобот" autocomplete="off" maxlength="90"></input><br>
+                <button value="" type="submit">Отправить</button>
+            </form>
+        </div>
+    
+    </body>
+</html>
